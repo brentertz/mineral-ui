@@ -33,7 +33,9 @@ export default {
   menu: [
     {
       type: 'do',
+      backgroundColor,
       title: 'use the appropriate variant for your intent',
+      description: `Match Mineral UI's [pre-defined variants](/color/#guidelines-variants) with semantic purpose.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -43,13 +45,14 @@ export default {
             <MenuItem variant="danger">Delete</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description: `Match Mineral UI's [pre-defined variants](/color/#guidelines-variants) with semantic purpose.`,
-      backgroundColor
+      )
     },
     {
       type: 'do',
+      backgroundColor,
       title: 'use clear labeling for option messaging',
+      description: `[MenuItem](../menu-item) actions should be predictable for frictionless interaction.
+  Labels should be structured: \`<verb> <noun>\`.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -58,14 +61,14 @@ export default {
             <MenuItem secondaryText="Cmd + J">Join lines</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description: `[MenuItem](../menu-item) actions should be predictable for frictionless interaction.
-  Labels should be structured: \`<verb> <noun>\`.`,
-      backgroundColor
+      )
     },
     {
       type: 'dont',
+      backgroundColor,
       title: 'cause confusion with the wrong variant',
+      description:
+        'Using the wrong variant can cause confusion, or undue stress for users.',
       example: (
         <DemoLayout>
           <Menu>
@@ -74,14 +77,14 @@ export default {
             <MenuItem variant="success">Drop table</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'Using the wrong variant can cause confusion, or undue stress for users.',
-      backgroundColor
+      )
     },
     {
       type: 'dont',
+      backgroundColor,
       title: 'use vague option labels',
+      description:
+        'Users should know exactly what will happen when they choose an option.',
       example: (
         <DemoLayout>
           <Menu>
@@ -90,16 +93,16 @@ export default {
             <MenuItem>Do it</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'Users should know exactly what will happen when they choose an option.',
-      backgroundColor
+      )
     }
   ],
   menuDivider: [
     {
       type: 'do',
+      backgroundColor,
       title: 'divide menu options to establish hierarchy',
+      description:
+        'If a long list of menu options are all similar conceptually, create hierarchy by placing dividers.',
       example: (
         <DemoLayout>
           <Menu>
@@ -114,14 +117,14 @@ export default {
             <MenuItem>Charles</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'If a long list of menu options are all similar conceptually, create hierarchy by placing dividers.',
-      backgroundColor
+      )
     },
     {
       type: 'do',
+      backgroundColor,
       title: 'separate meaningfully different options',
+      description:
+        'You can separate options that are related but should be set apart to increase usability.',
       example: (
         <DemoLayout>
           <Menu>
@@ -132,14 +135,13 @@ export default {
             <MenuItem variant="warning">Delete</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'You can separate options that are related but should be set apart to increase usability.',
-      backgroundColor
+      )
     },
     {
       type: 'dont',
+      backgroundColor,
       title: 'use dividers as a decorative element',
+      description: `If there is no need to create further grouping, don't use MenuDividers for decoration.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -158,16 +160,16 @@ export default {
             <MenuItem>Oganesson</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description: `If there is no need to create further grouping, don't use MenuDividers for decoration.`,
-      backgroundColor
+      )
     }
   ],
   menuGroup: [
     {
       type: 'do',
+      backgroundColor,
       title:
         'create groups if there are more than one set of actions in a Menu',
+      description: `Users will be able to quickly scan their available options if there aren't too many actions at the same level of hierarchy.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -182,13 +184,13 @@ export default {
             </MenuGroup>
           </Menu>
         </DemoLayout>
-      ),
-      description: `Users will be able to quickly scan their available options if there aren't too many actions at the same level of hierarchy.`,
-      backgroundColor
+      )
     },
     {
       type: 'dont',
+      backgroundColor,
       title: 'repeat the obvious in the group title',
+      description: `If there are only a couple of groups with a handful of elements, trust that the user will figure out the grouping from context.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -203,13 +205,13 @@ export default {
             </MenuGroup>
           </Menu>
         </DemoLayout>
-      ),
-      description: `If there are only a couple of groups with a handful of elements, trust that the user will figure out the grouping from context.`,
-      backgroundColor
+      )
     },
     {
       type: 'dont',
+      backgroundColor,
       title: 'put too many items into a group',
+      description: `If there are too many options in a group, it will be overwhelming to users and your feature will get buried.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -238,15 +240,16 @@ export default {
             </MenuGroup>
           </Menu>
         </DemoLayout>
-      ),
-      description: `If there are too many options in a group, it will be overwhelming to users and your feature will get buried.`,
-      backgroundColor
+      )
     }
   ],
   menuItem: [
     {
       type: 'do',
+      backgroundColor,
       title: 'use the right intent',
+      description:
+        'Give your users hints about what the potential outcome of an action will be.',
       example: (
         <DemoLayout>
           <Menu>
@@ -256,14 +259,14 @@ export default {
             <MenuItem variant="danger">Terminate instance</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'Give your users hints about what the potential outcome of an action will be.',
-      backgroundColor
+      )
     },
     {
       type: 'do',
+      backgroundColor,
       title: 'use secondary text to give hints to the user',
+      description:
+        'Use the `secondaryText` attribute to give hints about extra functionality or provide status context.',
       example: (
         <DemoLayout>
           <Menu>
@@ -272,14 +275,14 @@ export default {
             <MenuItem secondaryText="Cmd + V">Paste</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'Use the `secondaryText` attribute to give hints about extra functionality or provide status context.',
-      backgroundColor
+      )
     },
     {
       type: 'dont',
+      backgroundColor,
       title: 'use non-actions as placeholders for options',
+      description:
+        'All MenuItems in a Menu should be actionable. If an option only exists to provide information, it probably belongs somewhere else.',
       example: (
         <DemoLayout>
           <Menu>
@@ -289,14 +292,14 @@ export default {
             <MenuItem>Email customer</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'All MenuItems in a Menu should be actionable. If an option only exists to provide information, it probably belongs somewhere else.',
-      backgroundColor
+      )
     },
     {
       type: 'dont',
+      backgroundColor,
       title: 'use disabled MenuItems as section titles',
+      description:
+        'Use the `title` attribute to show meta information for a group, or place this information elsewhere in the interface.',
       example: (
         <DemoLayout>
           <Menu>
@@ -308,10 +311,7 @@ export default {
             <MenuItem variant="danger">Terminate instance</MenuItem>
           </Menu>
         </DemoLayout>
-      ),
-      description:
-        'Use the `title` attribute to show meta information for a group, or place this information elsewhere in the interface.',
-      backgroundColor
+      )
     }
   ]
 };

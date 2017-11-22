@@ -29,6 +29,8 @@ export default [
   {
     type: 'do',
     title: 'use Links to navigate',
+    description:
+      'Links can be used inline to navigate to other content or pages.',
     example: (
       <div>
         <p>
@@ -48,14 +50,12 @@ export default [
           </li>
         </nav>
       </div>
-    ),
-    description:
-      'Links can be used inline to navigate to other content or pages.'
+    )
   },
   {
     type: 'dont',
     title: 'use a link to perform a page action',
-    example: <Link>Scroll to bottom</Link>,
-    description: 'To represent an action, use a [Button](../button).'
+    description: 'To represent an action, use a [Button](../button).',
+    example: <Link>Scroll to bottom</Link>
   }
 ];

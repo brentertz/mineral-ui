@@ -28,23 +28,25 @@ export default [
   {
     type: 'do',
     title: 'use Icons with labels',
+    description: 'Icons are used to reinforce a message.',
     example: (
       <Button iconStart={<IconRefresh />} primary>
         Refresh
       </Button>
-    ),
-    description: 'Icons are used to reinforce a message.'
+    )
   },
   {
     type: 'dont',
     title: 'use Icons without context',
-    example: <Button primary iconStart={<IconLocalPlay />} />,
     description:
-      'Icons can be small and should not be presented without labels unless they are very simple and well-known.'
+      'Icons can be small and should not be presented without labels unless they are very simple and well-known.',
+    example: <Button primary iconStart={<IconLocalPlay />} />
   },
   {
     type: 'dont',
     title: 'use Icons as decoration',
+    description:
+      'In large lists of Buttons, avoid using Icons on all elements, as they become visual noise.',
     example: (
       <div>
         <Button minimal iconStart={<IconLocalOffer />}>
@@ -60,8 +62,6 @@ export default [
           Street View
         </Button>
       </div>
-    ),
-    description:
-      'In large lists of Buttons, avoid using Icons on all elements, as they become visual noise.'
+    )
   }
 ];
