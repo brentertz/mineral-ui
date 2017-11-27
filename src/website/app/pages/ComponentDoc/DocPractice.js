@@ -72,6 +72,11 @@ const styles = {
 
     [theme.bp_interior_bestPracticesMultiColumn]: {
       flex: `1 1 ${7 / 12 * 100}%`
+    },
+
+    // Specificity hack
+    '& pre[class]': {
+      margin: 0
     }
   }),
   header: ({ theme }) => ({

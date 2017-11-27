@@ -175,15 +175,15 @@ const BadContent = (
 export default [
   {
     type: 'do',
-    title: 'use Popover to provide help to the user',
-    description: 'Provide extra context for selected interface elements.',
+    description:
+      'Use Popover to provide extra context for selected interface elements.',
     example: <PopOverDo />
   },
   {
     type: 'dont',
-    title: 'add too much content',
-    description:
-      'Content should be succinct. If more context is needed, provide a link to another resource with more detail. Add a `max-width` value to constrain the layout if this is intended app behavior.',
+    description: `Avoid long Popover content. If more context is needed, provide
+a link to another resource with more detail. Add a \`max-width\` value to
+constrain the layout if this is intended app behavior.`,
     example: (
       <Popover content={BadContent}>
         <Button>Lorem Ipsum</Button>

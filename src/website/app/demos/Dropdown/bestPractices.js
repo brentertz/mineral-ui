@@ -43,8 +43,8 @@ const navData = [
 export default [
   {
     type: 'do',
-    title: 'keep available options in context',
-    description: `Dropdown options should be related to the trigger so users can find actions easily.`,
+    description: `Relate Dropdown options to the trigger so users can find
+actions easily.`,
     example: (
       <Dropdown data={data}>
         <Button primary>Account</Button>
@@ -53,9 +53,9 @@ export default [
   },
   {
     type: 'dont',
-    title: 'use less than 2 elements',
-    description: `Presenting a Dropdown with only one option is unnecessary UI.
-If your app renders only one option depending on state, consider a different layout for that special case.`,
+    description: `Don't present a Dropdown with only one option. If your app
+renders only one option depending on state, consider a different layout for that
+special case.`,
     example: (
       <Dropdown data={shortData}>
         <Button primary>File</Button>
@@ -64,9 +64,9 @@ If your app renders only one option depending on state, consider a different lay
   },
   {
     type: 'dont',
-    title: 'use Dropdown as primary navigation',
-    description: `Don't use a Dropdown as a way to hide navigation, even on mobile devices.
-Either reduce the amount of navigation in your application, or consider building a drawer with the [Menu](../menu).`,
+    description: `Avoid using Dropdown for navigation, even on mobile devices.
+Either reduce the amount of navigation in your application, or consider building
+a drawer with the [Menu](../menu).`,
     example: (
       <Dropdown data={navData}>
         <Button iconStart={<IconMenu />} />

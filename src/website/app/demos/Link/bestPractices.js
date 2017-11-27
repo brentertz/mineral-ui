@@ -28,7 +28,6 @@ const Link = ({ href, ...restProps }: { href?: string }) => (
 export default [
   {
     type: 'do',
-    title: 'use Links to navigate',
     description:
       'Links can be used inline to navigate to other content or pages.',
     example: (
@@ -54,8 +53,8 @@ export default [
   },
   {
     type: 'dont',
-    title: 'use a link to perform a page action',
-    description: 'To represent an action, use a [Button](../button).',
+    description: `Don't use a Link to perform a page action. To represent an
+action, use a [Button](../button).`,
     example: <Link>Scroll to bottom</Link>
   }
 ];

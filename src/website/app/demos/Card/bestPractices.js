@@ -33,9 +33,8 @@ export default {
     {
       type: 'do',
       backgroundColor,
-      title: 'Use a Card',
-      description:
-        'Use a Card when you have different kinds of related content representing one data object.',
+      description: `Use a Card when you have different kinds of related content
+representing one data object.`,
       example: (
         <Card>
           <CardImage src="/images/500x281.png" alt="gradient placeholder" />
@@ -52,9 +51,8 @@ export default {
     {
       type: 'dont',
       backgroundColor,
-      title: `use a Card when a list item would do`,
-      description:
-        'Cards group elements. Using a List for single pieces of information is a more efficent design.',
+      description: `Don't use Cards when list items would do. Using a list for
+single pieces of information is a more efficent design.`,
       example: (
         <CardList>
           <Card>
@@ -74,7 +72,6 @@ export default {
     {
       type: 'do',
       backgroundColor,
-      title: 'use the CardBlock component',
       description:
         'Use the CardBlock component to add formatting to content in your Cards.',
       example: (
@@ -91,9 +88,9 @@ export default {
     {
       type: 'dont',
       backgroundColor,
-      title: 'forget to use a CardBlock',
-      description:
-        'Content placed into a Card outside the CardBlock will not have formatting applied.',
+      title: '',
+      description: `Don't forget to use a CardBlock. Content placed into a Card
+outside the CardBlock will not have formatting applied.`,
       example: (
         <Card>
           <CardTitle minor>Minor Card Title</CardTitle>
@@ -115,7 +112,6 @@ export default {
     {
       type: 'do',
       backgroundColor,
-      title: 'use the CardImage component',
       description:
         'Use the CardImage component with `src` and `alt` attributes.',
       example: (
@@ -133,7 +129,6 @@ export default {
     {
       type: 'dont',
       backgroundColor,
-      title: 'put multiple images loose in a Card',
       description:
         'Using regular `<img />` tags will result in unformatted content.',
       example: (
@@ -154,8 +149,7 @@ export default {
     {
       type: 'do',
       backgroundColor,
-      title: 'use the CardTitle component',
-      description: 'Use the CardTitle component to add headings to your Cards.',
+      description: 'Use the CardTitle component to add titles to your Cards.',
       example: (
         <Card>
           <CardTitle minor>Minor Card Title</CardTitle>
@@ -170,9 +164,9 @@ export default {
     {
       type: 'dont',
       backgroundColor,
-      title: 'use custom heading sizes',
-      description:
-        'Regular `<h1>, <h2>` etc. will not be formatted automatically.',
+      title: '',
+      description: `Don't use custom heading elements. Regular \`<h1>\`,
+\`<h2>\`, etc. will not be formatted automatically.`,
       example: (
         <Card>
           <h1>Heading element</h1>
