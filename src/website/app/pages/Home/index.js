@@ -63,6 +63,8 @@ type State = {
 
 const pageMeta = {
   canonicalLink: 'https://mineral-ui.com',
+  description:
+    'Mineral UI is a design system and React component library for the web that lets you quickly build high-quality, accessible apps. Created by CA Technologies.',
   title: 'Mineral UI'
 };
 
@@ -672,6 +674,7 @@ export default class Home extends Component<Props, State> {
             <Root>
               <Helmet>
                 <link rel="canonical" href={pageMeta.canonicalLink} />
+                <meta name="description" content={pageMeta.description} />
                 <title>{pageMeta.title}</title>
               </Helmet>
 
