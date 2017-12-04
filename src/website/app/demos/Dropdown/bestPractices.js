@@ -64,7 +64,7 @@ special case.`,
   },
   {
     type: 'dont',
-    description: `Avoid using Dropdown for navigation, even on mobile devices.
+    description: `Don't use Dropdown for navigation, even on mobile devices.
 Either reduce the amount of navigation in your application, or consider building
 a drawer with the [Menu](../menu).`,
     example: (

@@ -32,7 +32,7 @@ export default [
   {
     type: 'dont',
     description:
-      "Avoid using a variant that doesn't match intent, which will confusion.",
+      "Don't use a variant that differs from intent, as this will confusion.",
     example: (
       <Button variant="danger" primary>
         Continue
@@ -48,7 +48,7 @@ should be used sparingly. Labels should be structured: \`<verb> <noun>\`.`,
   },
   {
     type: 'dont',
-    description: `Avoid "click me" or other vague messaging. Users should know
+    description: `Don't use "click me" or other vague messaging. Users should know
 exactly what will happen when they click a Button.`,
     example: <Button primary>Click Me</Button>
   }

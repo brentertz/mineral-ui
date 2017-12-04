@@ -52,7 +52,7 @@ create a visual separation.`,
   },
   {
     type: 'dont',
-    description: `Avoid overriding themes unless you really need to. Try to use
+    description: `Don't override themes unless you really need to. Try to use
 the default Mineral UI theme as-is. We've designed the colors, typography and
 layout as a system to provide turn-key consistency for your app.`,
     example: `

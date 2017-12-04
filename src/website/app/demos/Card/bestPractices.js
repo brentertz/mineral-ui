@@ -129,8 +129,8 @@ outside the CardBlock will not have formatting applied.`,
     {
       type: 'dont',
       backgroundColor,
-      description:
-        'Using regular `<img />` tags will result in unformatted content.',
+      description: `Don't use regular \`<img />\` tags, which will result in
+unformatted content.`,
       example: (
         <Card>
           <img src="/images/125x125.png" alt="gradient placeholder" />

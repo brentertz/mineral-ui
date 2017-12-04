@@ -37,13 +37,13 @@ export default [
   },
   {
     type: 'dont',
-    description: `Icons can be small and should not be presented without labels
-unless they are very simple and well-known.`,
+    description: `Don't present an Icon without a label unless it is very simple
+and well-known.`,
     example: <Button primary iconStart={<IconLocalPlay />} />
   },
   {
     type: 'dont',
-    description: `Avoid using Icons as decoration. In large lists of Buttons,
+    description: `Don't use Icons as decoration. In large lists of Buttons,
 avoid using Icons on all elements, as they become visual noise.`,
     example: (
       <div>

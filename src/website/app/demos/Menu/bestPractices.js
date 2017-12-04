@@ -51,7 +51,7 @@ export default {
       type: 'dont',
       backgroundColor,
       description:
-        "Avoid using a variant that doesn't match intent, which causes confusion.",
+        "Don't use a variant that differs from intent, as this will confusion.",
       example: (
         <DemoLayout>
           <Menu>
@@ -80,7 +80,7 @@ predictable for frictionless interaction. Labels should be structured:
     {
       type: 'dont',
       backgroundColor,
-      description: `Avoid vague labels. Users should know exactly what will
+      description: `Don't use vague labels. Users should know exactly what will
 happen when they click a Button.`,
       example: (
         <DemoLayout>
@@ -134,8 +134,8 @@ increase usability.`,
     {
       type: 'dont',
       backgroundColor,
-      description: `If there is no need to create further grouping, don't use
-MenuDividers for decoration.`,
+      description: `Don't use MenuDividers for decoration, if there is no need
+to create further grouping.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -183,9 +183,9 @@ too many actions at the same level of hierarchy.`,
     {
       type: 'dont',
       backgroundColor,
-      description: `Repeat the obvious in the group title. If there are only a
-couple of groups with a handful of elements, trust that the user will figure out
-the grouping from context.`,
+      description: `Don't repeat the obvious in the group title. If there are
+only a couple of groups with a handful of elements, trust that the user will
+figure out the grouping from context.`,
       example: (
         <DemoLayout>
           <Menu>
@@ -205,7 +205,7 @@ the grouping from context.`,
     {
       type: 'dont',
       backgroundColor,
-      description: `If there are too many options in a group, it will be
+      description: `Don't place too many items in a group, which will be
 overwhelming to users and your feature will get buried.`,
       example: (
         <DemoLayout>

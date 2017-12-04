@@ -181,9 +181,9 @@ export default [
   },
   {
     type: 'dont',
-    description: `Avoid long Popover content. If more context is needed, provide
-a link to another resource with more detail. Add a \`max-width\` value to
-constrain the layout if this is intended app behavior.`,
+    description: `Don't place long content in a Popover. If more context is
+needed, provide a link to another resource with more detail. Add a \`max-width\`
+value to constrain the layout if this is intended app behavior.`,
     example: (
       <Popover content={BadContent}>
         <Button>Lorem Ipsum</Button>
