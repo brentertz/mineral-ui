@@ -43,8 +43,8 @@ const navData = [
 export default [
   {
     type: 'do',
-    description: `Relate Dropdown options to the trigger so users can find
-actions easily.`,
+    description: `Populate Dropdown with options that are related to the trigger,
+so users can find actions easily.`,
     example: (
       <Dropdown data={data}>
         <Button primary>Account</Button>

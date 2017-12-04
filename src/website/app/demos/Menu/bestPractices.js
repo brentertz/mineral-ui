@@ -32,62 +32,20 @@ const backgroundColor = mineralTheme.color_gray_10;
 export default {
   menu: [
     {
-      type: 'do',
-      backgroundColor,
-      description:
-        'Use the [appropriate variant](/color/#guidelines-variants) for your intent.',
-      example: (
-        <DemoLayout>
-          <Menu>
-            <MenuItem>Share</MenuItem>
-            <MenuItem>Edit</MenuItem>
-            <MenuItem>Duplicate</MenuItem>
-            <MenuItem variant="success">Save</MenuItem>
-          </Menu>
-        </DemoLayout>
-      )
-    },
-    {
       type: 'dont',
       backgroundColor,
       description:
-        "Don't use a variant that differs from intent, as this will confusion.",
+        "Don't use a Menu as a general list. Items in a Menu should be actionable.",
       example: (
         <DemoLayout>
           <Menu>
-            <MenuItem>Clone table</MenuItem>
-            <MenuItem variant="danger">Create new table</MenuItem>
-          </Menu>
-        </DemoLayout>
-      )
-    },
-    {
-      type: 'do',
-      backgroundColor,
-      description: `Clearly label [MenuItem](../menu-item) actions to be
-predictable for frictionless interaction. Labels should be structured:
-\`<verb> <noun>\`.`,
-      example: (
-        <DemoLayout>
-          <Menu>
-            <MenuItem secondaryText="⌘L">Select line</MenuItem>
-            <MenuItem secondaryText="⌃⇧W">Select word</MenuItem>
-            <MenuItem secondaryText="⌘J">Join lines</MenuItem>
-          </Menu>
-        </DemoLayout>
-      )
-    },
-    {
-      type: 'dont',
-      backgroundColor,
-      description: `Don't use vague labels. Users should know exactly what will
-happen when they click a Button.`,
-      example: (
-        <DemoLayout>
-          <Menu>
-            <MenuItem>Go</MenuItem>
-            <MenuItem>Various config options</MenuItem>
-            <MenuItem>Do it</MenuItem>
+            <MenuItem>Broccoli</MenuItem>
+            <MenuItem>Cherry tomatoes</MenuItem>
+            <MenuItem>Lemon</MenuItem>
+            <MenuItem>Linguine</MenuItem>
+            <MenuItem>Garlic</MenuItem>
+            <MenuItem>Red pepper flakes</MenuItem>
+            <MenuItem>Salmon</MenuItem>
           </Menu>
         </DemoLayout>
       )
@@ -251,6 +209,51 @@ to give your users hints about what the potential outcome of an action will be.`
             <MenuItem>Generate snapshot</MenuItem>
             <MenuItem variant="warning">Reboot instance</MenuItem>
             <MenuItem variant="danger">Terminate instance</MenuItem>
+          </Menu>
+        </DemoLayout>
+      )
+    },
+    {
+      type: 'dont',
+      backgroundColor,
+      description:
+        "Don't use a variant that differs from intent, as this will cause confusion.",
+      example: (
+        <DemoLayout>
+          <Menu>
+            <MenuItem>Clone table</MenuItem>
+            <MenuItem variant="danger">Create new table</MenuItem>
+          </Menu>
+        </DemoLayout>
+      )
+    },
+    {
+      type: 'do',
+      backgroundColor,
+      description: `Clearly label [MenuItem](../menu-item) actions to be
+predictable for frictionless interaction. Labels should be structured:
+\`<verb> <noun>\`.`,
+      example: (
+        <DemoLayout>
+          <Menu>
+            <MenuItem secondaryText="⌘L">Select line</MenuItem>
+            <MenuItem secondaryText="⌃⇧W">Select word</MenuItem>
+            <MenuItem secondaryText="⌘J">Join lines</MenuItem>
+          </Menu>
+        </DemoLayout>
+      )
+    },
+    {
+      type: 'dont',
+      backgroundColor,
+      description: `Don't use vague labels. Users should know exactly what will
+happen when they click a Button.`,
+      example: (
+        <DemoLayout>
+          <Menu>
+            <MenuItem>Go</MenuItem>
+            <MenuItem>Various config options</MenuItem>
+            <MenuItem>Do it</MenuItem>
           </Menu>
         </DemoLayout>
       )

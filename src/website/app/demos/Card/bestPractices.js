@@ -51,6 +51,48 @@ representing one data object.`,
     {
       type: 'dont',
       backgroundColor,
+      title: '',
+      description: `Don't forget to use a [CardBlock](../card-block). Content
+placed into a Card outside the CardBlock will not have formatting or spacing
+applied.`,
+      example: (
+        <Card>
+          <CardTitle minor>Minor Card Title</CardTitle>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec
+            vulputate interdum sollicitudin.
+          </p>
+          <img
+            src="/images/200x200.png"
+            alt="gradient placeholder"
+            style={{ maxWidth: '100%' }}
+          />
+        </Card>
+      )
+    },
+    {
+      type: 'dont',
+      backgroundColor,
+      description: `Don't use regular \`<img />\` tags directly inside a Card,
+which will result in unformatted content. Use [CardImage](../card-image)
+instead.`,
+      example: (
+        <Card>
+          <img src="/images/125x125.png" alt="gradient placeholder" />
+          <img src="/images/125x125.png" alt="gradient placeholder" />
+          <CardTitle minor>Minor Card Title</CardTitle>
+          <CardBlock>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec
+            vulputate interdum sollicitudin.
+          </CardBlock>
+        </Card>
+      )
+    },
+    {
+      type: 'dont',
+      backgroundColor,
       description: `Don't use Cards when list items would do. Using a list for
 single pieces of information is a more efficent design.`,
       example: (
@@ -70,41 +112,17 @@ single pieces of information is a more efficent design.`,
   ],
   cardBlock: [
     {
-      type: 'do',
-      backgroundColor,
-      description:
-        'Use the CardBlock component to add formatting to content in your Cards.',
-      example: (
-        <Card>
-          <CardTitle>Card Title</CardTitle>
-          <CardBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec
-            vulputate interdum sollicitudin.
-          </CardBlock>
-        </Card>
-      )
-    },
-    {
       type: 'dont',
       backgroundColor,
       title: '',
-      description: `Don't forget to use a CardBlock. Content placed into a Card
-outside the CardBlock will not have formatting applied.`,
+      description: `Don't use CardBlock outside of [Card](../card), for which it
+was designed.`,
       example: (
-        <Card>
-          <CardTitle minor>Minor Card Title</CardTitle>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec
-            vulputate interdum sollicitudin.
-          </p>
-          <img
-            src="/images/200x200.png"
-            alt="gradient placeholder"
-            style={{ maxWidth: '100%' }}
-          />
-        </Card>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin.
+        </CardBlock>
       )
     }
   ],
@@ -112,29 +130,11 @@ outside the CardBlock will not have formatting applied.`,
     {
       type: 'do',
       backgroundColor,
-      description:
-        'Use the CardImage component with `src` and `alt` attributes.',
+      description: `Use the CardImage component with an \`alt\` attribute, to
+provide an adequate experience for all users.`,
       example: (
         <Card>
           <CardImage src="/images/690x690.png" alt="gradient placeholder" />
-          <CardTitle minor>Minor Card Title</CardTitle>
-          <CardBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec
-            vulputate interdum sollicitudin.
-          </CardBlock>
-        </Card>
-      )
-    },
-    {
-      type: 'dont',
-      backgroundColor,
-      description: `Don't use regular \`<img />\` tags, which will result in
-unformatted content.`,
-      example: (
-        <Card>
-          <img src="/images/125x125.png" alt="gradient placeholder" />
-          <img src="/images/125x125.png" alt="gradient placeholder" />
           <CardTitle minor>Minor Card Title</CardTitle>
           <CardBlock>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
